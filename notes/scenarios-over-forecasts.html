@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scenarios over forecasts · Liam Dodds</title>
+  <meta name="description" content="Planning crypto growth around a few written-down branches and the signals that tell them apart, instead of one number for next quarter.">
+  <meta property="og:title" content="Scenarios over forecasts">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://liamrdodds.co.za/notes/scenarios-over-forecasts.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="brand-mark">LD</span> Liam Dodds</a>
+    <nav class="nav" aria-label="Main">
+      <a href="../index.html#positions">Positions</a>
+      <a href="../index.html#expertise">Expertise</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" aria-current="page">Notes</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="article">
+  <div class="wrap">
+    <header class="article-head">
+      <p class="meta"><span>Method</span><span>November 2026</span><span>6 min read</span></p>
+      <h1>Scenarios over forecasts</h1>
+      <p class="standfirst">A single number for next quarter feels rigorous. In crypto it mostly gives everyone something to be wrong about together.</p>
+    </header>
+
+    <div class="prose">
+      <p>Every planning cycle starts with the same request: what will the market look like next quarter? Someone produces a number. Budgets, targets and hiring plans get built on it. Then the market does something else, and the post-mortem argues about whether the number was wrong or the execution was.</p>
+
+      <p>The problem is not that the forecaster was careless. Crypto demand is driven by things nobody forecasts reliably: liquidity, regulation, a geopolitical shock, one exchange failing. A point forecast hides that uncertainty in a single figure, and once it is in a spreadsheet nobody remembers it was a guess.</p>
+
+      <h2>What I use instead</h2>
+
+      <p>I plan in scenarios. In my framework, a scenario has to meet four conditions:</p>
+      <ol>
+        <li><strong>Conditional.</strong> It is stated as "if this, then that", never as "this will happen".</li>
+        <li><strong>Multi-branch.</strong> Two to four branches, which together cover the outcomes that would change a decision.</li>
+        <li><strong>Assumption-explicit.</strong> Every branch lists what has to be true for it to hold.</li>
+        <li><strong>Falsifiable.</strong> Every branch comes with tells: observable signals that confirm it or rule it out.</li>
+      </ol>
+
+      <p>The tells are the part people skip, and they are the part that matters. A scenario without tells is a story. A scenario with tells is something you can monitor.</p>
+
+      <h2>A worked example</h2>
+
+      <p>Here is a simplified version of how I would frame a quarter for a crypto exchange's marketing plan. The tells are illustrative.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Branch</th><th scope="col">Assumes</th><th scope="col">Tells</th><th scope="col">Marketing posture</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A. Liquidity expands</strong></td>
+              <td>Real yields fall, the dollar softens, risk appetite returns.</td>
+              <td>Sustained ETF inflows; real yields trending down; rising organic signups.</td>
+              <td>Lean into acquisition. Watch CPAs for false wins.</td>
+            </tr>
+            <tr>
+              <td><strong>B. Range-bound</strong></td>
+              <td>No macro catalyst; prices chop sideways.</td>
+              <td>Mixed ETF flows; flat volumes; volatility compressing.</td>
+              <td>Hold spend. Shift weight to activation and retention.</td>
+            </tr>
+            <tr>
+              <td><strong>C. Risk-off shock</strong></td>
+              <td>An external shock, such as an oil spike, pushes real yields up.</td>
+              <td>Brent breaks out of its range; real yields jump; ETF outflows.</td>
+              <td>Cut prospecting. Protect existing users and trust.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The point is not to guess which branch is right. The point is to agree, before the quarter starts, what each branch would mean for spend, and which signals would move us from one to another. That conversation is much easier to have calmly in advance than in the middle of a drawdown.</p>
+
+      <h2>Watching the tells</h2>
+
+      <p>In <a href="../index.html#work">VisibleMarkets</a>, the tool I built for this, every tell feeds a simple attention signal:</p>
+      <ul>
+        <li><span class="signal quiet">QUIET</span> No tell is moving. Stick to the plan and stop checking prices.</li>
+        <li><span class="signal watch">WATCH</span> One or more tells are moving toward a different branch. Review the assumptions, prepare the switch.</li>
+        <li><span class="signal break">BREAK</span> A branch has been confirmed or ruled out. Execute the pre-agreed change.</li>
+      </ul>
+
+      <p>Most of the value is in QUIET. It gives a team permission to ignore noise, which in crypto is most of what crosses the screen on a given day.</p>
+
+      <h2>What it changes</h2>
+
+      <p>Three things change when a marketing team plans this way.</p>
+      <p><strong>Budgets become conditional commitments.</strong> Spend is approved per branch, so a shift in the market triggers a decision that has already been made instead of an emergency meeting.</p>
+      <p><strong>Post-mortems get fairer.</strong> You can judge a decision against the branch that actually played out, which separates bad calls from bad luck.</p>
+      <p><strong>Being wrong gets cheaper.</strong> Every branch has tells, so you find out you were wrong early, while there is still time to do something about it.</p>
+
+      <blockquote>A forecast asks you to be right. A scenario plan asks you to notice quickly when you are wrong. The second is a much easier standard to meet.</blockquote>
+
+      <a class="back" href="index.html">Back to notes</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>© 2026 Liam Dodds · Cape Town</p>
+    <p><a href="../index.html">liamrdodds.co.za</a></p>
+  </div>
+</footer>
+</body>
+</html>
